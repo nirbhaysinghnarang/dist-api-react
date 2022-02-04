@@ -1,13 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin:0;
+  max-width: 100vh;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background-image: url('./assets/bg.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 25px;
+}
+
+.title{
+  font-size: 60px;
+  color:#FFF;
+  text-shadow: 3px 3px rgba(0,0,0,0.5);
+  font-family: 'Bangers', cursive;
+}
+
+
+.place-form{
+  width: 50%;
+  outline:none;
+  border:none;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 3px 3px rgba(50,50,75,0.2);
+  transition: 0.4s ease-out;
+  font-family: 'Fredoka One', cursive;
+}
+
+
+
+
+.place-form:focus{
+  box-shadow: 5px 5px rgba(50,50,75,0.2);
+  transition: 0.4s ease-out;
+  transform: scale(1.1);
+}
+
+
+.dist{
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  color:white;
+  text-shadow: 2px 2px rgba(50,50,75,0.2);
+}
+
+.time{
+  font-size: 25px;
+  font-family: 'Fredoka One', cursive;
+  color:white;
+  text-shadow: 2px 2px rgba(50,50,75,0.2);
 }
