@@ -16,10 +16,10 @@ function App() {
 
   const search = (e) => {
     console.log(`${e.key} pressed`);
-    if(e.key=="Enter"){
+    if(e.key==="Enter"){
       console.log("Request init.");
       if (navigator.geolocation) {
-          const pos = navigator.geolocation.getCurrentPosition(receivedPosition);
+            navigator.geolocation.getCurrentPosition(receivedPosition);
         }
     }
   }
@@ -33,11 +33,6 @@ function App() {
         setQuery('')
       }
     )
-  }
-
-  const sanitiseInput = (input) =>
-  {
-    return input.replace(" ", "+");
   }
 
 
